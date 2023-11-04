@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial of Thymeleaf</title>
+    <link rel="stylesheet" th:href="@{/css/obj.css}">
+</head>
+<body>
+	<h1>Thymeleaf Page</h1>
+	<p th:text="'val1= '+${val1}"></p>
+	<p th:text="'val2= '+${val2}"></p>
+	<p th:text="${val1} eq ${val2} ? '一致':'不一致'"></p>
+
+</body>
+</html>
